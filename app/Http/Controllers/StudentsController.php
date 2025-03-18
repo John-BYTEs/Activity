@@ -13,6 +13,7 @@ class StudentsController extends Controller
         $students = Students::orderBy('id', 'desc')->get();
         return view('studentList', compact('students'));
     }
+    
 
     public function newStudent(Request $request)
     {
